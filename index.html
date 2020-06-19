@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map (beta) ver1</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.0/mapbox-gl.css' rel='stylesheet'>
+    <link href='main.css' rel='stylesheet'>
+</head>
+<body>
+<div id="map" style="width:100vw; height:100vh;">
+</div>
+<div id="legend">
+    <h3>Legend</h3>
+    <div class="legend__row">
+        <svg width="20" height="20">
+            <line x1="0" x2="20" y1="10" y2="10" stroke="#A5D6A7" />
+        </svg>
+        <span>
+            0
+        </span>
+    </div>
+    <div class="legend__row">
+        <svg width="20" height="20">
+            <line x1="0" x2="20" y1="10" y2="10" stroke="#A5D6A7" />
+        </svg>
+        <span>
+            0 < value < 1
+        </span>
+    </div>
+    <div class="legend__row">
+        <svg width="20" height="20">
+            <line x1="0" x2="20" y1="10" y2="10" stroke="#FFC104" />
+        </svg>
+        <span>
+            1 < value < 2
+        </span>
+    </div>
+    <div class="legend__row">
+        <svg width="20" height="20">
+            <line x1="0" x2="20" y1="10" y2="10" stroke="#E4601E" />
+        </svg>
+        <span>
+            2 < value < 3
+        </span>
+    </div>
+    <div class="legend__row">
+        <svg width="20" height="20">
+            <line x1="0" x2="20" y1="10" y2="10" stroke="#880E4F" />
+        </svg>
+        <span>
+            3 < value
+        </span>
+    </div>
+</div>
+</body>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2doYW4iLCJhIjoiY2szamxrZGxwMGtjeTNibG10ZDE4ZXhiMCJ9.Kvn0rglozippdrB3L5pHVQ';
+</script>
+<script src="map.js"></script>
+</html>
